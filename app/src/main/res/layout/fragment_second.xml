@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="UDP Host Port:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/txtUdpHostPort"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="9166"
+            android:inputType="number"
+
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/settingsFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintTop_toBottomOf="@+id/settingsContainer"
+        >
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/SaveSettingsButtonLabel"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnCancelSettings"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/CancelSettingsButtonLabel"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
